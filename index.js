@@ -196,4 +196,4 @@ bot.on('message', message => {
     }    
 })
 
-bot.login('NDM1MzgyNzAzMzY2MzQwNjA4.DbZX1g.AEy9UUKbnit7agIeUIyCZ_sIRls')
+bot.login(process.env.TOKEN)

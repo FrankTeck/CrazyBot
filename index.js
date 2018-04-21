@@ -114,11 +114,9 @@ bot.on('message', message => {
         message.delete()
         message.reply("Évite les messages comme ça, please !")
     }
-      }
       if(message.content === "TG") {
         message.delete()
         message.reply("Évite les messages comme ça, please !")
-    }
     }
       if(message.content === "tG") {
         message.delete()

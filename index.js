@@ -103,90 +103,106 @@ bot.on('message', message => {
     if(message.content === "JUL") {
         message.reply(":jul:");
     }
-
+        if(message.content === "jul") {
+        message.reply(":jul:");
+    }
     if(message.content === "tg") {
         message.delete()
-        message.reply("Evite les message comme sa, please !")
+        message.reply("Évite les messages comme ça, please !")
+    }
+      if(message.content === "Tg") {
+        message.delete()
+        message.reply("Évite les messages comme ça, please !")
+    }
+      }
+      if(message.content === "TG") {
+        message.delete()
+        message.reply("Évite les messages comme ça, please !")
+    }
+    }
+      if(message.content === "tG") {
+        message.delete()
+        message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "fuck") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "nigg") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "fuk") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "cunt") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "cnut") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "bitch") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "dick") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "d1ck") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "pussy") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "asshole") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "b1tch") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "b!tch") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "blowjob") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "cock") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "c0ck") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "NTM") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "bite") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }
     if(message.content === "putain") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }  
     if(message.content === "merde") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
     }      
     if(message.content === "mrde") {
       message.delete()
-      message.reply("Evite les message comme sa, please !")
+      message.reply("Évite les messages comme ça, please !")
 
 
 

@@ -12,7 +12,7 @@ bot.on('ready', function () {
 
 bot.on('guildMemberAdd', function (member) {
   member.createDM().then(function (channel) {
-    return channel.send('Bienvenue ' + member.displayName + ' sur le serveur de Crazy_Street, je t\'invite à aller voir les #règles, amuse toi bien sur le Discord :smile: ')
+    return channel.send('Bienvenue ' + member.displayName + ' sur le serveur de Crazy Street, je t\'invite à aller voir les #règles, amuses-toi bien sur le Discord :smile: ')
   }).catch(console.error)
 })
 

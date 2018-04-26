@@ -128,12 +128,6 @@ bot.on('message', message => {
 
   bot.on('message', message => {  
   
-    if(message.content === "JUL") {
-        message.reply(":jul:");
-    }
-        if(message.content === "jul") {
-        message.reply(":jul:");
-    }
     if(message.content === "tg") {
         message.delete()
         message.reply("Évite les messages comme ça, please !")

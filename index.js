@@ -27,17 +27,16 @@ bot.on('guildMemberAdd', function (member) {
 });
 
 bot.on('guildMemberRemove', function (member) {
-  member.createDM().then(function (channel) {
-
-  var channel = member.guild.channels.find('name', 'bienvenue_bye');
-  if (!channel) return
-  var bvn = new Discord.RichEmbed()
-  .setColor("RANDOM")
-  .setTitle("Un Mini Crazy est parti !")
-  .setDescription(`\n Aurevoir **${member.user}** :frowning: `)
-  .setFooter("Tu reviendra nous voir", member.user.displayAvatarURL)
-  channel.sendEmbed(bvn)
-});
+  
+    var channel = member.guild.channels.find('name', 'bienvenue_bye');
+    if (!channel) return
+    var bvn = new Discord.RichEmbed()
+    .setColor("RANDOM")
+    .setTitle("Un Mini Crazy est parti !")
+    .setDescription(`\n Aurevoir **${member.user}** :frowning: `)
+    .setFooter("Tu reviendras nous voir", member.user.displayAvatarURL)
+    channel.sendEmbed(bvn)
+    });
 
 bot.on('message', message => {
 

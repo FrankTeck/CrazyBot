@@ -123,50 +123,6 @@ bot.on('message', message => {
 
 
   bot.on('message', message => {  
-    
-        if(message.content === prefix + 'mute'){
-        let muterole = message.guild.roles.find(`name`, config.muterole);
-        let muteuser = message.guild.member(message.mentions.users.first());
-        if(!muteuser){
-            const noargs = new Discord.RichEmbed()
-            .setAuthor("Syntax")
-            .setTitle("L'utilisateur n'a pas été trouver.")
-            .setColor("#4FB448")
-            .setFooter("FreeValley - 2018")
-            message.channel.send("Tu es sur que cet utilisateur existe ?");
-        }
-        if(!message.member.hasPermission("MUTE_MEMBERS")){
-                message.channel.send("Tu n'as pas les permission de mute un utilisateur !");
-        }else{
-            if(!muterole){
-                try{
-                    muterole = await message.guild.createRole({
-                        name: "Modétateur",
-                        color: "#c60b0b",
-                        permissions:["MUTE_MEMBERS", "KICK_MEMBERS", "BAN_MEMBERS"]
-                    })
-                    message.guild.channels.forEach(async (channel, id) => {
-                        await channel.overwritePermissions(muterole, {
-                            SEND_MESSAGES: false,
-                            ADD_REACTIONS: false
-                        });
-                    });
-                }catch(e){
-                    console.log(e.stack);
-                }
-            }
-            let mutetime = args[1];
-            if(!mutetime){
-                message.channel.send("Il faudrait peut-être lui définir un temps de mute 😄");
-            }
-            await(muteuser.addRole(muterole.id));
-            message.delete().catch(O_o=>{});
-            message.channel.send("Cet utilisateur à bien été menionner");
-            setTimeout(function(){
-                message.channel.send("Cet utilisateur à bien été menionner");
-            }, ms(mutetime));
-        }
-    }
   
     if(message.content === "JUL") {
         message.reply(":jul:");

@@ -16,7 +16,7 @@ bot.on('guildMemberAdd', function (member) {
   }).catch(console.error)
 })
 
-client.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', function (member) {
   var channel = member.guild.channels.find('name', 'Bienvenue_bye');
   if (!channel) return
   var bvn = new Discord.RichEmbed()

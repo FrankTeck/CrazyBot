@@ -28,6 +28,8 @@ client.on('guildMemberAdd', member => {
   //channel.send("Bienvenue toi : **" + member.user + "** sur : **Développeur(euse)s [FR, 2018]**.")
 });
 
+var botchannel = message.guild.channels.find("name" , "nom du canal");
+    if(message.channel.name(!botchannel)){
 bot.on('message', message => {  
 
     if(message.content === prefix + "help"){
@@ -91,7 +93,7 @@ bot.on('message', message => {
         .addField("Nom", "@CrazyBot#8719")
         .addField("Version", "Bêta")
         .addField("Creator", "@Franklin#3692")
-        .addField("Aide" ,"Franklin#3692")
+        .addField("Aide" ,"Xenos#2351 et lKi'#5772")
         .addField("Crée le", "18/04/2018")
         .addField("Pour", "Le Discord de Crazy_Street_")
         .addField("Invite boit", "Ce bot est uniquement accesible au discord de Crazy_Street_, il est donc privée")
@@ -114,8 +116,57 @@ bot.on('message', message => {
 
     }   
 })
+    }
+    else
+         message.channel.sendMessage('Tu as fais la commande dans le mauvais channel, essaye dans #commede-bots :smile:')
+    }
+
 
   bot.on('message', message => {  
+    
+        if(message.content === prefix + 'mute'){
+        let muterole = message.guild.roles.find(`name`, config.muterole);
+        let muteuser = message.guild.member(message.mentions.users.first());
+        if(!muteuser){
+            const noargs = new Discord.RichEmbed()
+            .setAuthor("Syntax")
+            .setTitle("L'utilisateur n'a pas été trouver.")
+            .setColor("#4FB448")
+            .setFooter("FreeValley - 2018")
+            message.channel.send("Tu es sur que cet utilisateur existe ?");
+        }
+        if(!message.member.hasPermission("MUTE_MEMBERS")){
+                message.channel.send("Tu n'as pas les permission de mute un utilisateur !");
+        }else{
+            if(!muterole){
+                try{
+                    muterole = await message.guild.createRole({
+                        name: nom du role,
+                        color: "#c60b0b",
+                        permissions:[]
+                    })
+                    message.guild.channels.forEach(async (channel, id) => {
+                        await channel.overwritePermissions(muterole, {
+                            SEND_MESSAGES: false,
+                            ADD_REACTIONS: false
+                        });
+                    });
+                }catch(e){
+                    console.log(e.stack);
+                }
+            }
+            let mutetime = args[1];
+            if(!mutetime){
+                message.channel.send("Il faudrait peut-être lui définir un temps de mute 😄");
+            }
+            await(muteuser.addRole(muterole.id));
+            message.delete().catch(O_o=>{});
+            message.channel.send("Cet utilisateur à bien été menionner");
+            setTimeout(function(){
+                message.channel.send("Cet utilisateur à bien été menionner");
+            }, ms(mutetime));
+        }
+    }
   
     if(message.content === "JUL") {
         message.reply(":jul:");

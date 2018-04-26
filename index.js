@@ -28,7 +28,7 @@ client.on('guildMemberAdd', member => {
   //channel.send("Bienvenue toi : **" + member.user + "** sur : **Développeur(euse)s [FR, 2018]**.")
 });
 
-var botchannel = message.guild.channels.find("name" , "nom du canal");
+var botchannel = message.guild.channels.find("name" , "commande-bots");
     if(message.channel.name(!botchannel)){
 bot.on('message', message => {  
 
@@ -112,12 +112,12 @@ bot.on('message', message => {
       message.channel.sendMessage(help_embed);
       console.log("Un MiniCrazy veut inviter un pote sur le serveur en faisant la commande /invite")
   }
-       
+
+})
 
     }   
-})
-    }
     else
+    {
          message.channel.sendMessage('Tu as fais la commande dans le mauvais channel, essaye dans #commede-bots :smile:')
     }
 
@@ -141,9 +141,9 @@ bot.on('message', message => {
             if(!muterole){
                 try{
                     muterole = await message.guild.createRole({
-                        name: nom du role,
+                        name: "Modétateur",
                         color: "#c60b0b",
-                        permissions:[]
+                        permissions:["MUTE_MEMBERS", "KICK_MEMBERS", "BAN_MEMBERS"]
                     })
                     message.guild.channels.forEach(async (channel, id) => {
                         await channel.overwritePermissions(muterole, {

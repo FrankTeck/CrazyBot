@@ -14,9 +14,7 @@ bot.on('guildMemberAdd', function (member) {
   member.createDM().then(function (channel) {
     return channel.send('Bienvenue ' + member.displayName + ' sur le serveur de Crazy Street, je t\'invite à aller voir les #règlement, amuses-toi bien sur le Discord :smile: ')
   }).catch(console.error)
-})
 
-client.on('guildMemberAdd', function (member) {
   var channel = member.guild.channels.find('name', 'Bienvenue_bye');
   if (!channel) return
   var bvn = new Discord.RichEmbed()

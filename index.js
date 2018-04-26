@@ -27,9 +27,6 @@ bot.on('guildMemberAdd', function (member) {
 });
 
 bot.on('message', message => {
-var botchannel = message.guild.channels.find("name" , "commande-bots");
-if(message.channel.name(!botchannel)){
-        console.log("Commande " + args[1] + " Executée");
 
     if(message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
@@ -110,12 +107,6 @@ if(message.channel.name(!botchannel)){
       .addField("Invitation:", "https://discord.gg/2TWTSrs")
       message.channel.sendMessage(help_embed);
       console.log("Un MiniCrazy veut inviter un pote sur le serveur en faisant la commande /invite")
-      
-    }
-    else
-    {
-      message.channel.sendMessage("Tu dois faire la commande sur le channel #commande-bots")
-  }
   
   }
 

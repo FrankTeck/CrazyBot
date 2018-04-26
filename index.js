@@ -7,7 +7,7 @@ bot.on('ready', function () {
 })
 
 bot.on('ready', function () {
-  bot.user.setGame('coder le bot de Crazy_Street_').catch(console.error)
+  bot.user.setGame('[/help]|Crazy_Street_ -> Host').catch(console.error)
 })
 
 bot.on('guildMemberAdd', function (member) {

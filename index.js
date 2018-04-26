@@ -27,7 +27,8 @@ bot.on('guildMemberAdd', function (member) {
 });
 
 var botchannel = message.guild.channels.find("name" , "commande-bots");
-    if(message.channel.name(botchannel)){
+if(message.channel.name(botchannel)){
+        console.log("Commande " + args[1] + " Executée");
 bot.on('message', message => {  
 
     if(message.content === prefix + "help"){
@@ -113,11 +114,11 @@ bot.on('message', message => {
 
 })
 
-    }   
+    }
     else
     {
-         message.channel.sendMessage('Tu as fais la commande dans le mauvais channel, essaye dans #commede-bots :smile:')
-    }
+      message.channel.sendMessage("Tu dois faire la commande sur le channel #commande-bots")
+  }
 
 
   bot.on('message', message => {  

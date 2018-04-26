@@ -12,9 +12,21 @@ bot.on('ready', function () {
 
 bot.on('guildMemberAdd', function (member) {
   member.createDM().then(function (channel) {
-    return channel.send('Bienvenue ' + member.displayName + ' sur le serveur de Crazy Street, je t\'invite à aller voir les #règles, amuses-toi bien sur le Discord :smile: ')
+    return channel.send('Bienvenue ' + member.displayName + ' sur le serveur de Crazy Street, je t\'invite à aller voir les #règlement, amuses-toi bien sur le Discord :smile: ')
   }).catch(console.error)
 })
+
+client.on('guildMemberAdd', member => {
+  var channel = member.guild.channels.find('name', 'Bienvenue_bye');
+  if (!channel) return
+  var bvn = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .setTitle("Un nouveau Mini Crazy est arrivéé !")
+  .setDescription(`\n Bienvenue **${member.user}** sur le Discord de **Crazy_Street_ :smile:`)
+  .setFooter("Je t'invite à aller dans le channel #règlement pour lire les règle du Discord ;)", member.user.displayAvatarURL)
+  channel.sendEmbed(bvn)
+  //channel.send("Bienvenue toi : **" + member.user + "** sur : **Développeur(euse)s [FR, 2018]**.")
+});
 
 bot.on('message', message => {  
 
@@ -79,6 +91,7 @@ bot.on('message', message => {
         .addField("Nom", "@CrazyBot#8719")
         .addField("Version", "Bêta")
         .addField("Creator", "@Franklin#3692")
+        .addField("Aide" ,"Franklin#3692")
         .addField("Crée le", "18/04/2018")
         .addField("Pour", "Le Discord de Crazy_Street_")
         .addField("Invite boit", "Ce bot est uniquement accesible au discord de Crazy_Street_, il est donc privée")
@@ -97,9 +110,13 @@ bot.on('message', message => {
       message.channel.sendMessage(help_embed);
       console.log("Un MiniCrazy veut inviter un pote sur le serveur en faisant la commande /invite")
   }
-    
+       
 
+    }   
+})
 
+  bot.on('message', message => {  
+  
     if(message.content === "JUL") {
         message.reply(":jul:");
     }

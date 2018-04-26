@@ -27,7 +27,7 @@ bot.on('guildMemberAdd', function (member) {
 });
 
 var botchannel = message.guild.channels.find("name" , "commande-bots");
-    if(message.channel.name(!botchannel)){
+    if(message.channel.name(botchannel)){
 bot.on('message', message => {  
 
     if(message.content === prefix + "help"){

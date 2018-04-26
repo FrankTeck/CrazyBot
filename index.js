@@ -20,10 +20,23 @@ bot.on('guildMemberAdd', function (member) {
   var bvn = new Discord.RichEmbed()
   .setColor("RANDOM")
   .setTitle("Un nouveau Mini Crazy est arrivéé !")
-  .setDescription(`\n Bienvenue **${member.user}** sur le Discord de **Crazy_Street_ :smile:`)
+  .setDescription(`\n Bienvenue **${member.user}** sur le Discord de Crazy_Street_ :smile:`)
   .setFooter("Je t'invite à aller dans le channel #règlement pour lire les règle du Discord ;)", member.user.displayAvatarURL)
   channel.sendEmbed(bvn)
   //channel.send("Bienvenue toi : **" + member.user + "** sur : **Développeur(euse)s [FR, 2018]**.")
+});
+
+bot.on('guildMemberRemove', function (member) {
+  member.createDM().then(function (channel) {
+
+  var channel = member.guild.channels.find('name', 'bienvenue_bye');
+  if (!channel) return
+  var bvn = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .setTitle("Un Mini Crazy est parti !")
+  .setDescription(`\n Aurevoir **${member.user}** :frowning: `)
+  .setFooter("Tu reviendra nous voir", member.user.displayAvatarURL)
+  channel.sendEmbed(bvn)
 });
 
 bot.on('message', message => {

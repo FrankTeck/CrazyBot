@@ -121,6 +121,25 @@ bot.on('message', message => {
       console.log("Un MiniCrazy veut inviter un pote sur le serveur en faisant la commande /invite")
   
   }
+  if(message.content === "aba")
+    {
+      message.reply("Abadakor")
+    }
+  
+  
+   if(message.content === "Lulu voc")
+    {
+      message.reply("Crazy a dit que tu devais venir voc @LuluTriel")
+    }
+   if(message.content === "abaEnzoo")
+    {
+      message.reply("Il a enfin le Legend sut AbaEpicube")
+    }
+  
+   if(message.content === "Je peux être OP ?")
+    {
+      message.reply("Ok, pour être OP, tu tourne a droite, puis tu vas tue bambi et tu seras OP")
+    }
 
 })
 

@@ -133,12 +133,12 @@ bot.on('message', message => {
     }
    if(message.content === "abaEnzoo")
     {
-      message.reply("Il a enfin le Legend sut AbaEpicube")
+      message.reply("Il a enfin le Legend sur AbaEpicube")
     }
   
    if(message.content === "Je peux être OP ?")
     {
-      message.reply("Ok, pour être OP, tu tourne a droite, puis tu vas tue bambi et tu seras OP")
+      message.reply("Ok, pour être OP, tu tournes a droite, puis tu vas rue bambi (Tu y trouvera @|Baptou|)et tu seras OP")
     }
 
 })

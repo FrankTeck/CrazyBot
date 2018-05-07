@@ -122,6 +122,22 @@ bot.on('message', message => {
   
   }
   
+      if(message.content === prefix +  "report Dimix cheat"){
+      var help_embed = new Discord.RichEmbed()
+      .setColor("#4FB448")
+      .setTitle("Report - Xray")
+      .addField("Cause:", "A besoin de cheat pour avoir du skill ")
+      message.channel.sendMessage(help_embed);
+      console.log("Un MiniCrazy veut report Dimix")
+        }
+        if(message.content === prefix +  "report Dimix tryharde"){
+      var help_embed = new Discord.RichEmbed()
+      .setColor("#4FB448")
+      .setTitle("Report - Tryharde")
+      .addField("Cause:", "A besoin de tryharde pour essayer de gagner, mais il perd")
+      message.channel.sendMessage(help_embed);
+      console.log("Un MiniCrazy veut report Dimix")
+          }
   if(message.content === "aba")
     {
       message.reply("Abadakor")

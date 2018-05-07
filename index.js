@@ -125,6 +125,12 @@ bot.on('message', message => {
     {
       message.reply("Abadakor")
     }
+    }
+       
+  if(message.content === prefix + "report")
+    {
+      message.reply("Va sur le site d'Epicube: https://epicube.fr/report")
+    }
   
   
    if(message.content === "Lulu voc")
@@ -139,6 +145,11 @@ bot.on('message', message => {
    if(message.content === "Je peux être OP ?")
     {
       message.reply("Ok, pour être OP, tu tournes a droite, puis tu vas rue bambi (Tu y trouvera @|Baptou|)et tu seras OP")
+    }
+  }
+  if(message.content === "Speed")
+    {
+      message.reply(".;,;.")
     }
 
 })

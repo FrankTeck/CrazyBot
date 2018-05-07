@@ -121,10 +121,10 @@ bot.on('message', message => {
       console.log("Un MiniCrazy veut inviter un pote sur le serveur en faisant la commande /invite")
   
   }
+  
   if(message.content === "aba")
     {
       message.reply("Abadakor")
-    }
     }
        
   if(message.content === prefix + "report")

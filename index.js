@@ -153,7 +153,7 @@ bot.on('message', message => {
   
    if(message.content === "AbaDev")
     {
-      message.reply("AbaDev, le Dieu, rien à dire de plus !)
+      message.reply("AbaDev, le Dieu, rien à dire de plus !")
     }
   
   if(message.content === "Speed")

@@ -146,7 +146,16 @@ bot.on('message', message => {
     {
       message.reply("Ok, pour être OP, tu tournes a droite, puis tu vas rue bambi (Tu y trouvera @|Baptou|)et tu seras OP")
     }
-  }
+   if(message.content === "AbaFunky")
+    {
+      message.reply("Respècte AbaFunky, et il te respectera en retour")
+    }
+  
+   if(message.content === "AbaDev")
+    {
+      message.reply("AbaDev, le Dieu, rien à dire de plus !)
+    }
+  
   if(message.content === "Speed")
     {
       message.reply(".;,;.")

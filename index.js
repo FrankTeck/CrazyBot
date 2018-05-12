@@ -187,6 +187,26 @@ bot.on('message', message => {
         message.delete()
         message.reply("Évite les messages comme ça, please !")
     }
+        if(message.content === "FORTNITE") {
+        message.delete()
+        message.reply("Évite les messages jeux comme ça, chaque personne qui parle de ce jeux, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
+    }
+            if(message.content === "Fortnite") {
+        message.delete()
+        message.reply("Évite les messages jeux comme ça, chaque personne qui parle de ce jeux, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
+    }
+            if(message.content === "fortnite") {
+        message.delete()
+        message.reply("Évite les messages jeux comme ça, chaque personne qui parle de ce jeux, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
+    }
+            if(message.content === "F-O-R-T-N-I-T-E") {
+        message.delete()
+        message.reply("Évite les messages jeux comme ça, chaque personne qui parle de ce jeux, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
+    }
+            if(message.content === "dimix") {
+        message.delete()
+        message.reply("Évite les messages comme ça, chaque personne qui parle de lui, un dimix se fait mute sur le discord de AbaDev !")
+    }
       if(message.content === "Tg") {
         message.delete()
         message.reply("Évite les messages comme ça, please !")

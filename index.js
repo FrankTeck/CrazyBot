@@ -189,19 +189,19 @@ bot.on('message', message => {
     }
         if(message.content === "FORTNITE") {
         message.delete()
-        message.reply("Évite les messages jeux comme ça, chaque personne qui parle de ce jeux, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
+        message.reply("Évite les messages de ce jeu comme ça, chaque personne qui parle de ce jeu, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
     }
             if(message.content === "Fortnite") {
         message.delete()
-        message.reply("Évite les messages jeux comme ça, chaque personne qui parle de ce jeux, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
+        message.reply("Évite les messages de ce jeu comme ça, chaque personne qui parle de ce jeu, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
     }
             if(message.content === "fortnite") {
         message.delete()
-        message.reply("Évite les messages jeux comme ça, chaque personne qui parle de ce jeux, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
+        message.reply("Évite les messages de ce jeu comme ça, chaque personne qui parle de ce jeu, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
     }
             if(message.content === "F-O-R-T-N-I-T-E") {
         message.delete()
-        message.reply("Évite les messages jeux comme ça, chaque personne qui parle de ce jeux, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
+        message.reply("Évite les messages de ce jeu comme ça, chaque personne qui parle de ce jeu, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
     }
             if(message.content === "dimix") {
         message.delete()

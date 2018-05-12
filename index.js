@@ -142,6 +142,12 @@ bot.on('message', message => {
     {
       message.reply("Abadakor")
     }
+  
+   if(message.content === "Crazy_Street_")
+    {
+      message.reply("CrazyStreet Ne te repondra pas vu qu'il est malvoyant")
+      message.reply("Commande by Dimix")
+    }
        
   if(message.content === prefix + "report")
     {
@@ -204,6 +210,10 @@ bot.on('message', message => {
         message.reply("Évite les messages de ce jeu comme ça, chaque personne qui parle de ce jeu, un dimix decède et un Crazy_Street_ défonce  quelqu'un !")
     }
             if(message.content === "dimix") {
+        message.delete()
+        message.reply("Évite les messages comme ça, chaque personne qui parle de lui, un dimix se fait mute sur le discord de AbaDev !")
+    }
+                if(message.content === "Dimix") {
         message.delete()
         message.reply("Évite les messages comme ça, chaque personne qui parle de lui, un dimix se fait mute sur le discord de AbaDev !")
     }
